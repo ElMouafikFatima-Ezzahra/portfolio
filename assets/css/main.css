@@ -690,6 +690,11 @@ section,
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 500px){
+  .hero{
+    min-height: 80vh;
+  }
+}
 
 .hero img {
   position: absolute;
