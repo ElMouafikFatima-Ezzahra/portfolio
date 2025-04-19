@@ -31,7 +31,7 @@
       color: white;
     }
     @media (max-width: 768px) {
-      .iframe-pdf {
+      #iframe-pdf {
         display: none; /* Cacher l'iframe sur mobile */
       }
     }
@@ -101,18 +101,13 @@
               <div class="ratio ratio-16x9">
                 <iframe 
                   src="assets/img/TrekWise_Presentation.pdf" 
-                  style="border: none; min-height: 300px; object-fit: contain;"
-                  title="TrekWise PDF Presentation"
-                ></iframe>
-                <iframe 
-                  src="assets/img/TrekWise_Presentation.pdf" 
                   style="border: none; height: 400px; width: 100%;"
                   title="TrekWise PDF Presentation"
                 />
                 
                 <!-- Alternative link in case iframe doesn't load on mobile -->
                 <div class="mt-3 text-center">
-                  <a href="assets/img/TrekWise_Presentation.pdf" class="btn btn-outline-primary" target="_blank" download style="border-color: #2CACAD; color: #2CACAD;">
+                  <a href="assets/img/TrekWise_Presentation.pdf" class="btn btn-outline-primary" target="_blank" id="iframe-pdf" download style="border-color: #2CACAD; color: #2CACAD;">
                     📄 Download PDF
                   </a>
                 </div>
