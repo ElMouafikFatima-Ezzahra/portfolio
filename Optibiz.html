@@ -26,6 +26,17 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+    .btn-outline-primary{
+      border-color: #2CACAD; 
+      color: #2CACAD; 
+    }
+    .btn-outline-primary:hover {
+      background-color: #2CACAD;
+      color: white;
+    }
+  </style>
+
 </head>
 
 <body class="project-details-page">
@@ -59,7 +70,7 @@
         <div class="heading">
           <div class="container">
             <div class="row d-flex justify-content-center text-center">
-              <div class="col-lg-8" style="border: #880308 solid 5px;">
+              <div class="col-lg-8" style="border: #880308 solid 5px; width:80%">
                 <h1 style="color: #880308; font-size: 40px; font-weight: bold; text-shadow: 2px 2px 5px rgba(0,0,0,0.2);">OptiBiz</h1>
               </div>
             </div>
@@ -80,12 +91,22 @@
     <section id="project-details" class="project-details section">
 
         <div class="container">
-
-            <div class="row gy-4  justify-content-between">
-    
-                <div class="container section-title my-4" data-aos="fade-up" style="padding-bottom: 0%;">
+           <div class="container section-title my-4" data-aos="fade-up" style="padding-bottom: 0%;">
                     <h2>Optibiz</h2>
                     <div style="padding-bottom: 0%;"><span class="description-title">Documentation</span></div>
+           </div>
+
+          <div class="row gy-4  justify-content-between">
+              <div class="col-lg-5 order-1 order-lg-0" data-aos="fade-up" data-aos-delay="70">
+                    <ul class="list-unstyled">
+                         <li><i class="bi bi-check-circle"></i> Add a product by filling out fields and clicking "Add".</li>
+                            <li><i class="bi bi-check-circle"></i> Edit a product by clicking "Edit", updating the fields, and saving.</li>
+                            <li><i class="bi bi-check-circle"></i> Delete any product by clicking "Delete".</li>
+                            <li><i class="bi bi-check-circle"></i> Search by typing in the search bar (title or category).</li>
+                            <li><i class="bi bi-check-circle"></i> Update Quantity: Re-adding an existing product automatically updates its stock without creating duplicates.</li>
+                            <li><i class="bi bi-check-circle"></i> Sort products to display from the most recent to the oldest.</li>
+                            <li><i class="bi bi-check-circle"></i> Data Persistence: Automatically save product data to prevent loss after closing the app.</li>
+                    </ul>              
                 </div>
     
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="70" >
@@ -93,17 +114,15 @@
                         <iframe src="assets/img/Documentation du Projet OPTIBIZ (1).pdf"></iframe>
                     </div>
                 </div>
-                <div class="col-lg-5" data-aos="fade-up" data-aos-delay="70">
-                    <ul class="list-unstyled">
-                         <li><i class="bi bi-check-circle"></i> Add a product by filling out fields and clicking <strong>"Add"</strong>.</li>
-                            <li><i class="bi bi-check-circle"></i> Edit a product by clicking <strong>"Edit"</strong>, updating the fields, and saving.</li>
-                            <li><i class="bi bi-check-circle"></i> Delete any product by clicking <strong>"Delete"</strong>.</li>
-                            <li><i class="bi bi-check-circle"></i> Search by typing in the search bar (title or category).</li>
-                            <li><i class="bi bi-check-circle"></i> <strong>Update Quantity:</strong> Re-adding an existing product automatically updates its stock without creating duplicates.</li>
-                            <li><i class="bi bi-check-circle"></i> Sort products to display from the most recent to the oldest.</li>
-                            <li><i class="bi bi-check-circle"></i> <strong>Data Persistence:</strong> Automatically save product data to prevent loss after closing the app.</li>
-                    </ul>              
+
+                <div class="col-lg-6 mt-1 order-0  order-lg-1" data-aos="fade-up" data-aos-delay="70">
+                  <div class="mt-2 text-center">
+                    <a href="assets/img/Documentation du Projet OPTIBIZ (1).pdf" class="btn btn-outline-primary" target="_blank" download >
+                      📄 Download PDF
+                    </a>
+                  </div>
                 </div>
+                
             </div>
     
             <div class="row gy-4  justify-content-between">
@@ -127,10 +146,9 @@
 
   </main>
 
-  <footer id="footer" class="footer dark-background">
+  <footer id="footer" class="footer dark-background" style="padding-bottom: 0%;">
     <div class="container">
       <img class="sitelogo" src="assets/img/Frame 14.png" style="width: 20%; margin-bottom: 4%;">
-      <p>Computer Science and AI Engineering Student At ENSAM CASABLANCA</p>
       <div class="social-links d-flex justify-content-center mb-0">
         <a href="https://www.linkedin.com/in/fatima-ezzahra-el-mouafik-513401316" style="margin-right: 4%;"><i class="bi bi-linkedin clair"></i></a>
         <a href="https://github.com/ElMouafikFatima-Ezzahra"  style="margin-right: 4%;"><i class="bi bi-github clair"></i></a>
@@ -138,13 +156,13 @@
           <i class="bi bi-envelope-fill clair" ></i>
         </a>
       </div>
-      <div class="container">
+      <div class="container" style="padding-top: 3%;">
         <div class="copyright" style="padding-top: 3%;">
           <span style="color: #024D60;">&copy; 2025 EL MOUAFIK Fatima-Ezzahra. All rights reserved.</span>
         </div>
         <div class="copyright" style="padding-top: 0%;">
-          <small style="color: #cfe4ea; font-size: 0.7rem; opacity: 0.8;"><span>Copyright</span>Personal<span>All Rights Reserved - </span>
-          Designed by <a style="color: #cfe4ea; font-size: 0.7rem; opacity: 0.8;" href="https://bootstrapmade.com/">BootstrapMade</a></small>
+          <small style="color: #cfe4ea; font-size: 0.7rem; opacity: 0.5;"><span>Copyright</span>Personal<span>All Rights Reserved - </span>
+          Designed by <a style="color: #cfe4ea; font-size: 0.7rem; opacity: 0.5;" href="https://bootstrapmade.com/">BootstrapMade</a></small>
         </div>
       </div>
     </div>
