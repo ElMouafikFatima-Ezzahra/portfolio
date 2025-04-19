@@ -25,6 +25,17 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <style>
+    .btn-outline-primary:hover {
+      background-color: #2CACAD;
+      color: white;
+    }
+    @media (max-width: 768px) {
+      .iframe-pdf {
+        display: none; /* Cacher l'iframe sur mobile */
+      }
+    }
+  </style>
 
 </head>
 
@@ -90,18 +101,21 @@
               <div class="ratio ratio-16x9">
                 <iframe 
                   src="assets/img/TrekWise_Presentation.pdf" 
-                  style="border: none; min-height: 300px; width: 100%; object-fit: contain;"
+                  style="border: none; min-height: 300px; object-fit: contain;"
                   title="TrekWise PDF Presentation"
                 ></iframe>
-              </div>
-            
-              <!-- Alternative link in case iframe doesn't load on mobile -->
-              <div class="mt-3 text-center">
-                <a href="assets/img/TrekWise_Presentation.pdf" class="btn btn-outline-primary" target="_blank" download>
-                  📄 Download PDF
-                </a>
-              </div>
-              </div>
+                <iframe 
+                  src="assets/img/TrekWise_Presentation.pdf" 
+                  style="border: none; height: 400px; width: 100%;"
+                  title="TrekWise PDF Presentation"
+                />
+                
+                <!-- Alternative link in case iframe doesn't load on mobile -->
+                <div class="mt-3 text-center">
+                  <a href="assets/img/TrekWise_Presentation.pdf" class="btn btn-outline-primary" target="_blank" download style="border-color: #2CACAD; color: #2CACAD;">
+                    📄 Download PDF
+                  </a>
+                </div>
 
             </div>
           
